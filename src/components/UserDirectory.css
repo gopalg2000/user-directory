@@ -1,0 +1,79 @@
+
+
+  .user-directory-container {
+    max-width: 80%; /* Set the maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  
+  .user-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 3px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #61dafb;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+ 
+  
+  .user-info {
+    flex: 1;
+  }
+  
+  .user-name {
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  
+  .user-details {
+    text-align: right;
+    font-weight: bold;
+  
+    margin-right: 20px;
+  }
+  .user-details-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .column {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .user-info,
+    .user-address {
+      flex-basis: 100%; /* On smaller screens, make them take full width */
+    }
+  
+    .user-info-section {
+      flex-direction: column;
+    }
+  
+    .user-posts-section {
+      grid-template-columns: repeat(2, 1fr); /* On smaller screens, show two columns */
+    }
+  
+    .page-section {
+      flex-direction: column;
+    }
+  
+    .row {
+      flex-direction: column;
+    }
+  }

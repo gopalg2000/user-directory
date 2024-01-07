@@ -1,0 +1,109 @@
+.user-detail {
+  padding: 20px;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-button {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+}
+.user-info-section{
+  border: 1px solid#cccccc;
+  padding: 1px;
+  margin-bottom: 35px;
+  border-radius: 8px;
+}
+
+.user-info-section,
+.user-info,
+.user-address {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+ 
+}
+
+.user-info,
+.user-address {
+  flex: 1;
+}
+
+.user-info h3,
+.user-address h3 {
+  color: #333;
+}
+
+.user-posts-section {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.post-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+  border-radius: 40px
+}
+
+.post-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.021);
+}
+
+
+.page-section {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.country-dropdown {
+  width: 100px;
+  height: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.clock-section {
+  display: flex;
+  align-items: center;
+  
+}
+
+
+.clock-toggle {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .user-info,
+  .user-address {
+    flex-basis: 100%; /* On smaller screens, make them take full width */
+  }
+
+  .user-info-section {
+    flex-direction: column;
+  }
+
+  .user-posts-section {
+    grid-template-columns: repeat(2, 1fr); /* On smaller screens, show two columns */
+  }
+
+  .page-section {
+    flex-direction: column;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
